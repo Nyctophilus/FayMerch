@@ -7,11 +7,31 @@ const Gategory = () => {
       <h2 className={styles.sidebar_title}>Category</h2>
 
       <div>
-        <Input filterName={"all"} name={"category"} />
-        <Input filterName={"sneakers"} name={"category"} />
-        <Input filterName={"flats"} name={"category"} />
-        <Input filterName={"sandals"} name={"category"} />
-        <Input filterName={"heels"} name={"category"} />
+        <Input
+          value={"all"}
+          filterName={"all"}
+          name={"category"}
+        />
+        <Input
+          value={"sneakers"}
+          filterName={"sneakers"}
+          name={"category"}
+        />
+        <Input
+          value={"flats"}
+          filterName={"flats"}
+          name={"category"}
+        />
+        <Input
+          value={"sandals"}
+          filterName={"sandals"}
+          name={"category"}
+        />
+        <Input
+          value={"heels"}
+          filterName={"heels"}
+          name={"category"}
+        />
       </div>
     </div>
   );

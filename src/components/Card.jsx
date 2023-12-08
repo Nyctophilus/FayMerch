@@ -10,9 +10,6 @@ const Card = ({
   reviews,
   prevPrice,
   newPrice,
-  company,
-  color,
-  category,
 }) => {
   const totalReveiws = Math.ceil(
     (reviews.match(/\d+/g) / 1500) * 5
@@ -51,6 +48,7 @@ const Card = ({
           </div>
         </section>
       </div>
+      <hr />
     </section>
   );
 };

@@ -12,12 +12,36 @@ const Colors = () => {
         Colors
       </h2>
 
-      <Input filterName={"all"} name={"color"} />
-      <Input filterName={"black"} name={"color"} />
-      <Input filterName={"blue"} name={"color"} />
-      <Input filterName={"red"} name={"color"} />
-      <Input filterName={"white"} name={"color"} />
-      <Input filterName={"green"} name={"color"} />
+      <Input
+        value={"all"}
+        filterName={"all"}
+        name={"color"}
+      />
+      <Input
+        value={"black"}
+        filterName={"black"}
+        name={"color"}
+      />
+      <Input
+        value={"blue"}
+        filterName={"blue"}
+        name={"color"}
+      />
+      <Input
+        value={"red"}
+        filterName={"red"}
+        name={"color"}
+      />
+      <Input
+        value={"white"}
+        filterName={"white"}
+        name={"color"}
+      />
+      <Input
+        value={"green"}
+        filterName={"green"}
+        name={"color"}
+      />
     </div>
   );
 };

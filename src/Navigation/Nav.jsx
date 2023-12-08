@@ -3,24 +3,12 @@ import {
   AiOutlineShoppingCart,
   AiOutlineUserAdd,
 } from "react-icons/ai";
-import products from "../db/data";
-
 import styles from "./Nav.module.css";
 import { useContext } from "react";
 import { ProductsContext } from "../../ProductsContext";
-const Nav = () => {
-  const { setProducts } = useContext(ProductsContext);
 
-  const handleFilter = (e) =>
-    setProducts(
-      products.filter(
-        (product) =>
-          product.title
-            .toLocaleLowerCase()
-            .indexOf(e.target.value.toLocaleLowerCase()) !==
-          -1
-      )
-    );
+const Nav = () => {
+  const { handleQuery } = useContext(ProductsContext);
 
   return (
     <nav className={styles.nav}>
@@ -29,7 +17,7 @@ const Nav = () => {
           type="text"
           className={styles.search_input}
           placeholder="Enter your search shoes."
-          onChange={handleFilter}
+          onChange={handleQuery}
         />
       </div>
 
