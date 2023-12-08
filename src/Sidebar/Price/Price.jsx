@@ -1,40 +1,21 @@
+import Input from "../../components/Input";
 import styles from "../Category/Gategory.module.css";
 
 const Price = () => {
   return (
-    <div className="ml">
+    <div>
       <h2
         className={styles.sidebar_title}
-        style={{ marginTop: "20px", marginLeft: "15px" }}
+        style={{ marginTop: "1.2rem" }}
       >
         Price
       </h2>
 
-      <label className={styles.sidebar_label_container}>
-        <input type="radio" name="test2" />
-        <span className={styles.checkmark}></span>
-        <span>all</span>
-      </label>
-      <label className={styles.sidebar_label_container}>
-        <input type="radio" name="test2" />
-        <span className={styles.checkmark}></span>
-        <span>$0 - $50</span>
-      </label>
-      <label className={styles.sidebar_label_container}>
-        <input type="radio" name="test2" />
-        <span className={styles.checkmark}></span>
-        <span>$50 - $100</span>
-      </label>
-      <label className={styles.sidebar_label_container}>
-        <input type="radio" name="test2" />
-        <span className={styles.checkmark}></span>
-        <span>$100 - $150</span>
-      </label>
-      <label className={styles.sidebar_label_container}>
-        <input type="radio" name="test2" />
-        <span className={styles.checkmark}></span>
-        <span>over $150</span>
-      </label>
+      <Input filterName={"all"} name={"price"} />
+      <Input filterName={"$0 - $50"} name={"price"} />
+      <Input filterName={"$50 - $100"} name={"price"} />
+      <Input filterName={"$100 - $150"} name={"price"} />
+      <Input filterName={"over $150"} name={"price"} />
     </div>
   );
 };

@@ -19,9 +19,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
+
+  @media (min-width: 1279px) {
+    max-width: 1280px;
+  }
 }
 
 a {

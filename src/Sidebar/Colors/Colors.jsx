@@ -1,3 +1,4 @@
+import Input from "../../components/Input";
 import styles from "../Category/Gategory.module.css";
 
 // .all{background: linear-gradient(blue, crimson)}
@@ -6,41 +7,17 @@ const Colors = () => {
     <div>
       <h2
         className={styles.sidebar_title}
-        style={{ marginTop: "2rem" }}
+        style={{ marginTop: "1.2rem" }}
       >
         Colors
       </h2>
 
-      <label className={styles.sidebar_label_container}>
-        <input type="radio" name="test2" />
-        <span className={styles.checkmark}></span>
-        <span>all</span>
-      </label>
-      <label className={styles.sidebar_label_container}>
-        <input type="radio" name="test2" />
-        <span className={styles.checkmark}></span>
-        <span>black</span>
-      </label>
-      <label className={styles.sidebar_label_container}>
-        <input type="radio" name="test2" />
-        <span className={styles.checkmark}></span>
-        <span>Blue</span>
-      </label>
-      <label className={styles.sidebar_label_container}>
-        <input type="radio" name="test2" />
-        <span className={styles.checkmark}></span>
-        <span>red</span>
-      </label>
-      <label className={styles.sidebar_label_container}>
-        <input type="radio" name="test2" />
-        <span className={styles.checkmark}></span>
-        <span>white</span>
-      </label>
-      <label className={styles.sidebar_label_container}>
-        <input type="radio" name="test2" />
-        <span className={styles.checkmark}></span>
-        <span>green</span>
-      </label>
+      <Input filterName={"all"} name={"color"} />
+      <Input filterName={"black"} name={"color"} />
+      <Input filterName={"blue"} name={"color"} />
+      <Input filterName={"red"} name={"color"} />
+      <Input filterName={"white"} name={"color"} />
+      <Input filterName={"green"} name={"color"} />
     </div>
   );
 };

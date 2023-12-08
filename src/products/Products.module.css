@@ -2,23 +2,27 @@
   display: flex;
   flex-wrap: wrap;
   margin-left: 20rem;
-  margin-top: 20rem;
-  z-index: -2;
+  margin-top: 5rem;
 }
 
 .card {
-  margin: 20px;
+  margin: 1.1rem;
   border: 2px solid #ededed;
-  padding: 20px;
+  padding: 1rem;
+  flex-basis: 2rem;
   cursor: pointer;
+  border-radius: 1.2rem;
 }
 .card_img {
-  width: 13rem;
+  width: 10vw;
   margin-bottom: 1rem;
+  aspect-ratio: 1;
+  object-fit: fill;
 }
 
 .card_title {
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .card_reviews {

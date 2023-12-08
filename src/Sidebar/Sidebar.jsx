@@ -4,6 +4,7 @@ import { BsCart3 } from "react-icons/bs";
 import Gategory from "./Category/Gategory";
 import Price from "./Price/Price";
 import Colors from "./Colors/Colors";
+import ConsumeCategory from "../../CategoryContext";
 
 const Sidebar = () => {
   return (
@@ -13,9 +14,11 @@ const Sidebar = () => {
           <BsCart3 className={styles.cart_icon} />
         </div>
 
-        <Gategory />
-        <Price />
-        <Colors />
+        <ConsumeCategory>
+          <Gategory />
+          <Price />
+          <Colors />
+        </ConsumeCategory>
       </section>
     </>
   );
