@@ -9,22 +9,28 @@
     sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
+  margin: 0 auto;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  margin: 0 auto;
-  padding: 2rem;
-
-  @media (min-width: 1279px) {
-    max-width: 1280px;
+  @media (min-width: 1024px) {
+    max-width: 980px;
   }
+  @media (min-width: 1201px) {
+    max-width: 1150px;
+  }
+}
+
+html {
+  background-image: url("https://imgur.com/a/kyL2I8F");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 a {
@@ -37,8 +43,8 @@ a:hover {
 }
 
 body {
-  min-width: 320px;
   min-height: 100vh;
+  padding: 1rem;
 }
 
 h1 {
@@ -47,7 +53,6 @@ h1 {
 }
 
 button {
-  border-radius: 8px;
   border: 0.6px solid #747bff;
   padding: 10px 20px;
   font-size: 1em;
@@ -56,8 +61,7 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.5s, color 0.5s;
-  margin-right: 6px;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   color: #747bff;
 }
 button:hover,

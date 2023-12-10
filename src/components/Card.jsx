@@ -1,12 +1,11 @@
-import { Fragment } from "react";
 import styles from "../products/Products.module.css";
 import { BsFillBagHeartFill } from "react-icons/bs";
 import { RiStarLine } from "react-icons/ri";
+import { AiFillStar } from "react-icons/ai";
 
 const Card = ({
   img,
   title,
-  star,
   reviews,
   prevPrice,
   newPrice,
@@ -26,10 +25,16 @@ const Card = ({
         <h3 className={styles.card_title}>{title}</h3>
         <section className={styles.card_reviews}>
           {[...Array(totalReveiws)].map((_, i) => (
-            <Fragment key={i}>{star}</Fragment>
+            <AiFillStar
+              className={styles.rating_start}
+              key={i}
+            />
           ))}
           {[...Array(5 - totalReveiws)].map((_, i) => (
-            <RiStarLine key={i} />
+            <RiStarLine
+              className={styles.rating_start}
+              key={i}
+            />
           ))}
 
           <span className={styles.total_reviews}>
@@ -48,7 +53,6 @@ const Card = ({
           </div>
         </section>
       </div>
-      <hr />
     </section>
   );
 };

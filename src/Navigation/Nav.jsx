@@ -4,14 +4,16 @@ import {
   AiOutlineUserAdd,
 } from "react-icons/ai";
 import styles from "./Nav.module.css";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { ProductsContext } from "../../ProductsContext";
 
 const Nav = () => {
   const { handleQuery } = useContext(ProductsContext);
 
   return (
-    <nav className={styles.nav}>
+    <nav
+      className={`${styles.nav} ${styles.sticky_header}`}
+    >
       <div className={styles.nav_container}>
         <input
           type="text"

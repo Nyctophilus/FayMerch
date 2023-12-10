@@ -9,8 +9,8 @@ function App() {
     <ConsumeProducts>
       <Sidebar />
       <Nav />
-      <Products />
       <Recommended />
+      <Products />
     </ConsumeProducts>
   );
 }
