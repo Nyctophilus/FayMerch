@@ -52,16 +52,23 @@ const ConsumeProducts = ({ children }) => {
   }, [selectedTab]);
 
   useEffect(() => {
-    setProducts(
-      data.filter((product) =>
-        product.title
-          .toLocaleLowerCase()
-          .includes(query.toLocaleLowerCase())
-      )
-    );
+    query &&
+      setProducts(
+        data.filter((product) =>
+          product.title
+            .toLocaleLowerCase()
+            .includes(query.toLocaleLowerCase())
+        )
+      );
   }, [query]);
 
   useEffect(() => {
+    if (selectedBrand === "all");
+    {
+      setProducts(data);
+      return;
+    }
+
     selectedBrand &&
       setProducts(
         data.filter(
