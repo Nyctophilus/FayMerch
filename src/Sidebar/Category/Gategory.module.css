@@ -37,20 +37,39 @@
   border-radius: 50%;
 }
 
+.all {
+  background-image: linear-gradient(blue, crimson);
+}
+.black {
+  background-color: black;
+}
+.blue {
+  background-color: blue;
+}
+.red {
+  background-color: red;
+}
+.white {
+  background-color: white;
+}
+.green {
+  background-color: green;
+}
+
 .checkmark + span {
   text-transform: capitalize;
 }
 
-.all {
-  background: linear-gradient(blue, crimson);
+.sidebar_label_container
+  input:checked
+  ~ .checkmark:not(.all):not(.blue):not(.black):not(
+    .red
+  ):not(.white):not(.green) {
+  background-color: #747bff;
 }
 
-.sidebar_label_container:hover input ~ .checkmark {
-  background-color: #ccc;
-}
-
-.sidebar_label_container input:checked ~ .checkmark {
-  background-color: #2196f3;
+.sidebar_label_container input:checked ~ .checkmark + span {
+  color: #747bff;
 }
 
 .checkmark:after {
@@ -59,8 +78,8 @@
   display: none;
 }
 
-.sidebar_label_container input:checked ~ .checkmark:after {
-  display: block;
+.sidebar_label_container input:checked .checkmark span {
+  color: #747bff;
 }
 
 .sidebar_label_container .checkmark:after {
@@ -69,7 +88,6 @@
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: white;
 }
 
 .line {

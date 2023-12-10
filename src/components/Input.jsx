@@ -17,7 +17,11 @@ const Input = ({ value, filterName, name }) => {
         onClick={handleChange}
         value={value}
       />
-      <span className={styles.checkmark}></span>
+      <span
+        className={`${styles.checkmark} ${
+          name === "color" && styles[filterName]
+        }`}
+      ></span>
       <span>{filterName}</span>
     </label>
   );
