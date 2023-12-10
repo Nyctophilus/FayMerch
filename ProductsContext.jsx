@@ -63,8 +63,7 @@ const ConsumeProducts = ({ children }) => {
   }, [query]);
 
   useEffect(() => {
-    if (selectedBrand === "all");
-    {
+    if (selectedBrand === "all") {
       setProducts(data);
       return;
     }

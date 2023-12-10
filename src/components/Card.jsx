@@ -2,6 +2,7 @@ import styles from "../products/Products.module.css";
 import { BsFillBagHeartFill } from "react-icons/bs";
 import { RiStarLine } from "react-icons/ri";
 import { AiFillStar } from "react-icons/ai";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Card = ({
   img,
@@ -15,7 +16,12 @@ const Card = ({
   );
 
   return (
-    <section className={styles.card}>
+    <motion.article
+      className={styles.card}
+      layout
+      key={title}
+      transition={{ duration: 0.5 }}
+    >
       <img
         className={styles.card_img}
         src={img}
@@ -53,7 +59,7 @@ const Card = ({
           </div>
         </section>
       </div>
-    </section>
+    </motion.article>
   );
 };
 export default Card;

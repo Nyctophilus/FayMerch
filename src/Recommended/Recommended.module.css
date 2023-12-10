@@ -1,3 +1,13 @@
+.Recommended_title {
+  margin-bottom: 20px;
+  margin-top: 5rem;
+  font-size: 1.3rem;
+
+  @media (min-width: 1025px) {
+    margin-left: 20rem;
+  }
+}
+
 .Recommended_btns {
   display: flex;
   gap: 0.5rem;
@@ -25,16 +35,6 @@
   }
   @media (max-width: 1024px) {
     justify-content: center;
-  }
-}
-
-.Recommended_title {
-  margin-bottom: 20px;
-  margin-top: 20px;
-  font-size: 1.3rem;
-
-  @media (min-width: 1025px) {
-    margin-left: 20rem;
   }
 }
 
